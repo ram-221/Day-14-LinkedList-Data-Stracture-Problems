@@ -1,4 +1,4 @@
-package com.bridgelabzlinkedlistuc05;
+package com.bridgelabzlinkedlistuc06;
 
 public class Node<K> implements INode<K> {
 	private K key;
