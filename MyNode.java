@@ -1,4 +1,4 @@
-package com.bridgelabzlinkedlistuc04;
+package com.bridgelabzlinkedlistuc05;
 
 public class MyNode<K> {
 	public INode head;
@@ -10,7 +10,6 @@ public class MyNode<K> {
 	}
 
 	public void add(INode newNode) {
-
 		if (this.tail == null)
 			this.tail = newNode;
 		if (this.head == null)
@@ -39,7 +38,13 @@ public class MyNode<K> {
 		myNode.setNext(myNewNode);
 		myNewNode.setNext(temp);
 	}
-
+	
+	public INode pop(){
+		INode temp = this.head;
+		this.head = head.getNext();
+		return  temp;
+	}
+	
 	public void printNodes() {
 		StringBuffer myNodes = new StringBuffer("My Nodes :");
 		INode temp = head;
