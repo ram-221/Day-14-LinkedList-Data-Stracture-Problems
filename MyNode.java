@@ -1,4 +1,4 @@
-package com.bridgelabzlinkedlistuc07;
+package com.bridgelabzlinkedlistuc08;
 import java.util.Scanner;
 public class MyNode<K> {
 	public INode head;
